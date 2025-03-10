@@ -1,4 +1,3 @@
-// logger.go
 package main
 
 import (
@@ -15,6 +14,6 @@ func initLogger() {
 		os.Exit(1)
 	}
 	log.SetOutput(logFile)
-	log.SetFlags(log.LstdFlags) // Логируем дату и время
+	log.SetFlags(log.LstdFlags)
 	log.Println("Запуск программы auto-redux-gunpack")
 }

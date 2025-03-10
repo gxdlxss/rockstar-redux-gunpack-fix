@@ -1,4 +1,3 @@
-// config.go
 package main
 
 import (
@@ -11,12 +10,13 @@ import (
 	"strings"
 )
 
-// Config хранит пути к директориям и состояние автозапуска.
+// Config хранит пути к директориям, путь к GTA5.exe и флаг автозапуска.
 type Config struct {
 	GunpackNew string `json:"gunpack_new"`
 	GunpackOld string `json:"gunpack_old"`
 	ReduxNew   string `json:"redux_new"`
 	ReduxOld   string `json:"redux_old"`
+	GtaExePath string `json:"gta_exe_path"`
 	AutoRun    bool   `json:"auto_run"`
 }
 

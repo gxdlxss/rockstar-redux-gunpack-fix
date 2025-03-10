@@ -1,4 +1,3 @@
-// autorun.go
 package main
 
 import (
@@ -26,7 +25,7 @@ func setAutoRun(enable bool, exePath string) error {
 	} else {
 		cmd := exec.Command("reg", "delete", regPath, "/v", "auto-redux-gunpack", "/f")
 		if err := cmd.Run(); err != nil {
-			log.Printf("Ошибка удаления автозапуска (возможно, запись отсутствует): %v", err)
+			log.Printf("Ошибка удаления автозапуска: %v", err)
 		} else {
 			log.Println("Запись автозапуска удалена.")
 		}
@@ -36,15 +35,12 @@ func setAutoRun(enable bool, exePath string) error {
 
 // hideConsole скрывает окно консоли, чтобы программа продолжала работать в фоне.
 func hideConsole() {
-	// Получаем дескриптор окна консоли
 	kernel32 := syscall.NewLazyDLL("kernel32.dll")
 	getConsoleWindow := kernel32.NewProc("GetConsoleWindow")
 	hwnd, _, _ := getConsoleWindow.Call()
 	if hwnd == 0 {
 		return
 	}
-
-	// Вызываем ShowWindow из user32.dll с параметром 0 (SW_HIDE)
 	user32 := syscall.NewLazyDLL("user32.dll")
 	showWindow := user32.NewProc("ShowWindow")
 	const SW_HIDE = 0

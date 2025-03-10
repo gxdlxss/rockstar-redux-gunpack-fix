@@ -1,4 +1,3 @@
-// processcheck.go
 package main
 
 import (
@@ -14,18 +13,15 @@ func getRunningProcesses() ([]string, error) {
 	cmd := exec.Command("tasklist")
 	var out bytes.Buffer
 	cmd.Stdout = &out
-
 	if err := cmd.Run(); err != nil {
 		return nil, err
 	}
-
 	lines := strings.Split(out.String(), "\n")
 	var processes []string
 	for _, line := range lines {
 		fields := strings.Fields(line)
 		if len(fields) > 0 {
-			processName := fields[0]
-			processes = append(processes, processName)
+			processes = append(processes, strings.ToLower(fields[0]))
 		}
 	}
 	return processes, nil
@@ -46,28 +42,21 @@ func checkIfProcessRunning(processName string) bool {
 	return false
 }
 
-// isProcessRunningByPath проверяет, запущен ли процесс с заданным полным путем к исполняемому файлу.
-// Используется утилита wmic для поиска процесса по полному пути.
+// isProcessRunningByPath проверяет, запущен ли процесс по полному пути к исполняемому файлу.
+// Используется утилита wmic для поиска процесса по пути.
 func isProcessRunningByPath(exePath string) bool {
-	// Экранируем обратные слеши для wmic
 	escapedPath := strings.ReplaceAll(exePath, `\`, `\\`)
-	// Формируем запрос:
-	// Пример: wmic process where "ExecutablePath='C:\\Full\\Path\\Program.exe'" get ProcessId
 	cmd := exec.Command("wmic", "process", "where", fmt.Sprintf("ExecutablePath='%s'", escapedPath), "get", "ProcessId")
 	var out bytes.Buffer
 	cmd.Stdout = &out
-
 	if err := cmd.Run(); err != nil {
 		log.Printf("Ошибка выполнения wmic: %v", err)
 		return false
 	}
-
 	lines := strings.Split(out.String(), "\n")
-	// Обычно первая строка - заголовок "ProcessId", далее ID процессов, если они есть.
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if line != "" && !strings.EqualFold(line, "ProcessId") {
-			// Если нашли непустую строку, значит процесс запущен.
 			return true
 		}
 	}
