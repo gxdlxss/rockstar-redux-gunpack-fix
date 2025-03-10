@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os/exec"
+	"syscall"
 )
 
 // setAutoRun устанавливает или удаляет запись автозапуска через реестр Windows.
@@ -31,4 +32,21 @@ func setAutoRun(enable bool, exePath string) error {
 		}
 	}
 	return nil
+}
+
+// hideConsole скрывает окно консоли, чтобы программа продолжала работать в фоне.
+func hideConsole() {
+	// Получаем дескриптор окна консоли
+	kernel32 := syscall.NewLazyDLL("kernel32.dll")
+	getConsoleWindow := kernel32.NewProc("GetConsoleWindow")
+	hwnd, _, _ := getConsoleWindow.Call()
+	if hwnd == 0 {
+		return
+	}
+
+	// Вызываем ShowWindow из user32.dll с параметром 0 (SW_HIDE)
+	user32 := syscall.NewLazyDLL("user32.dll")
+	showWindow := user32.NewProc("ShowWindow")
+	const SW_HIDE = 0
+	showWindow.Call(hwnd, SW_HIDE)
 }

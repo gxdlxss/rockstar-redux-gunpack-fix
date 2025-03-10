@@ -9,6 +9,42 @@ import (
 	"time"
 )
 
+func runCopyingLoop(gtaProcessName, gtaProcessPath string, cfg *Config, username string) {
+	log.Printf("Будем копировать файлы каждые несколько секунд, пока не запустится процесс %s (по имени или по пути)", gtaProcessName)
+	for {
+		// Если GTA запущена по имени или по полному пути, прекращаем работу
+		if checkIfProcessRunning(gtaProcessName) || isProcessRunningByPath(gtaProcessPath) {
+			log.Printf("Процесс %s обнаружен (либо по имени, либо по пути). Останавливаем копирование.", gtaProcessName)
+			break
+		}
+
+		log.Println("GTA не запущен. Выполняем копирование...")
+
+		// Копирование для gunpack
+		var wg sync.WaitGroup
+		log.Printf("Копирование gunpack: %s -> %s", cfg.GunpackNew, cfg.GunpackOld)
+		copyDirRecursive(cfg.GunpackNew, cfg.GunpackOld, &wg)
+		wg.Wait()
+
+		// Копирование для redux по пути из конфигурации
+		var wg2 sync.WaitGroup
+		log.Printf("Копирование redux: %s -> %s", cfg.ReduxNew, cfg.ReduxOld)
+		copyDirRecursive(cfg.ReduxNew, cfg.ReduxOld, &wg2)
+		wg2.Wait()
+
+		// Дополнительно копируем redux файлы в дефолтный backup (C:\Users\{username}\AppData\Local\altv-majestic\backup)
+		defaultReduxBackupDir := fmt.Sprintf("C:\\Users\\%s\\AppData\\Local\\altv-majestic\\backup", username)
+		var wg3 sync.WaitGroup
+		log.Printf("Копирование redux: %s -> %s", cfg.ReduxNew, defaultReduxBackupDir)
+		copyDirRecursive(cfg.ReduxNew, defaultReduxBackupDir, &wg3)
+		wg3.Wait()
+
+		log.Println("Копирование завершено. Ждём несколько секунд и проверяем снова.")
+		time.Sleep(5 * time.Second)
+	}
+	log.Println("Работа копировальной части завершена.")
+}
+
 func main() {
 	initLogger()
 	configPath := "config.json"
@@ -53,39 +89,36 @@ func main() {
 	}
 
 	// Здесь указываем точное имя процесса, который означает "GTA запущен".
-	// Например, если это GTA5.exe (проверьте в Диспетчере задач).
-	// Если в Диспетчере задач он отображается как "GTA5.exe", то пишем так.
-	// Если по-другому — укажите нужное имя.
 	const gtaProcessName = "GTA5.exe"
 
-	log.Printf("Будем копировать файлы каждые несколько секунд, пока не запустится процесс %s", gtaProcessName)
-
-	for {
-		// Проверяем, запущен ли GTA
-		if checkIfProcessRunning(gtaProcessName) {
-			log.Printf("Процесс %s обнаружен. Останавливаем копирование и выходим.", gtaProcessName)
-			break
-		}
-
-		log.Println("GTA не запущен. Выполняем копирование...")
-
-		// Копирование для gunpack
-		var wg sync.WaitGroup
-		log.Printf("Копирование gunpack: %s -> %s", cfg.GunpackNew, cfg.GunpackOld)
-		copyDirRecursive(cfg.GunpackNew, cfg.GunpackOld, &wg)
-		wg.Wait()
-
-		// Копирование для redux
-		var wg2 sync.WaitGroup
-		log.Printf("Копирование redux: %s -> %s", cfg.ReduxNew, cfg.ReduxOld)
-		copyDirRecursive(cfg.ReduxNew, cfg.ReduxOld, &wg2)
-		wg2.Wait()
-
-		log.Println("Копирование завершено. Ждём несколько секунд и проверяем снова.")
-
-		// Интервал между копированиями (например, 5 секунд)
-		time.Sleep(5 * time.Second)
+	// Получаем имя текущего пользователя для формирования дефолтных путей.
+	username := os.Getenv("USERNAME")
+	if username == "" {
+		username = "DefaultUser"
 	}
-	log.Println("Работа программы завершена. Закрываемся.")
-	fmt.Println("Работа программы завершена. Подробности смотрите в app.log")
+	defaultGTAPath := fmt.Sprintf("C:\\Users\\%s\\AppData\\Local\\altv-majestic\\backup\\GTA5.exe", username)
+	// Запрос пути к GTA5.exe с дефолтным значением.
+	gtaProcessPath := prompt(fmt.Sprintf("Введите полный путь к GTA5.exe (по умолчанию: %s): ", defaultGTAPath))
+	if gtaProcessPath == "" {
+		gtaProcessPath = defaultGTAPath
+	}
+
+	// Определяем режим запуска по наличию командного аргумента "-autostart"
+	isAutoStart := false
+	if len(os.Args) > 1 && os.Args[1] == "-autostart" {
+		isAutoStart = true
+	}
+
+	if isAutoStart {
+		// Автозапуск: сразу скрываем окно и запускаем копировальный цикл
+		hideConsole()
+		runCopyingLoop(gtaProcessName, gtaProcessPath, cfg, username)
+	} else {
+		// Ручной запуск: выводим сообщение, запускаем копировальный цикл,
+		// затем через 10 секунд завершаем работу.
+		fmt.Println("Программа запущена")
+		go runCopyingLoop(gtaProcessName, gtaProcessPath, cfg, username)
+		time.Sleep(10 * time.Second)
+		log.Println("Ручной запуск завершён через 10 секунд.")
+	}
 }
