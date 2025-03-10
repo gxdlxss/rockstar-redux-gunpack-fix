@@ -1,0 +1,1 @@
+reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v auto-redux-gunpack /f
