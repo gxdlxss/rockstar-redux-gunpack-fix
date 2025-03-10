@@ -10,6 +10,7 @@ import (
 	"sync"
 )
 
+// copyFile копирует один файл из src в dst (заменяет, если уже существует).
 func copyFile(src, dst string) error {
 	in, err := os.Open(src)
 	if err != nil {
@@ -18,7 +19,7 @@ func copyFile(src, dst string) error {
 	}
 	defer in.Close()
 
-	// Создаём все необходимые директории
+	// Создаём все необходимые директории (если их нет).
 	if err := os.MkdirAll(filepath.Dir(dst), 0755); err != nil {
 		log.Printf("Ошибка создания директорий для %s: %v", dst, err)
 		return err
@@ -45,6 +46,8 @@ func copyFile(src, dst string) error {
 	return nil
 }
 
+// copyDirRecursive рекурсивно обходит директорию src.
+// Для каждой подпапки вызывает себя, а для каждого файла запускает отдельную горутину.
 func copyDirRecursive(src, dst string, wg *sync.WaitGroup) {
 	entries, err := ioutil.ReadDir(src)
 	if err != nil {
@@ -57,7 +60,6 @@ func copyDirRecursive(src, dst string, wg *sync.WaitGroup) {
 		dstPath := filepath.Join(dst, entry.Name())
 
 		if entry.IsDir() {
-			// Рекурсивное копирование подпапки
 			copyDirRecursive(srcPath, dstPath, wg)
 		} else {
 			wg.Add(1)

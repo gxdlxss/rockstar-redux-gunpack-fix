@@ -11,6 +11,7 @@ import (
 	"strings"
 )
 
+// Config хранит пути к директориям и состояние автозапуска.
 type Config struct {
 	GunpackNew string `json:"gunpack_new"`
 	GunpackOld string `json:"gunpack_old"`
@@ -46,6 +47,7 @@ func saveConfig(cfg *Config, path string) error {
 	return nil
 }
 
+// prompt выводит приглашение и считывает ввод пользователя.
 func prompt(message string) string {
 	fmt.Print(message)
 	scanner := bufio.NewScanner(os.Stdin)

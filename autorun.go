@@ -7,6 +7,7 @@ import (
 	"os/exec"
 )
 
+// setAutoRun устанавливает или удаляет запись автозапуска через реестр Windows.
 func setAutoRun(enable bool, exePath string) error {
 	const regPath = `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
 	if enable {
