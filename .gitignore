@@ -3,3 +3,6 @@ config.json
 
 # Игнорировать лог-файлы
 app.log
+
+#Игнор exe
+auto-redux-gunpack.exe
