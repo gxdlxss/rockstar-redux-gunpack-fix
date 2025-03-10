@@ -110,3 +110,121 @@
 2025/03/10 22:11:48 Процесс GTA5.exe обнаружен. Останавливаем копирование.
 2025/03/10 22:11:48 Работа копировального цикла завершена.
 2025/03/10 22:11:48 Программа завершена (первичный запуск).
+2025/03/10 22:17:53 Запуск программы auto-redux-gunpack
+2025/03/10 22:17:53 Конфигурация загружена из config.json
+2025/03/10 22:17:53 Будем копировать файлы каждые несколько секунд, пока не запустится процесс GTA5.exe (по имени или по пути)
+2025/03/10 22:17:53 GTA не запущен. Выполняем копирование...
+2025/03/10 22:17:53 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:17:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:17:53 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:17:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:17:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:17:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:17:58 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:17:58 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:17:58 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:17:58 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:17:58 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:17:59 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:17:59 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:18:03 Ручной запуск: скрываем консоль через 10 секунд.
+2025/03/10 22:18:04 GTA не запущен. Выполняем копирование...
+2025/03/10 22:18:04 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:18:05 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:18:05 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:18:05 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:05 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:05 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:09 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:18:09 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:18:09 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:09 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:09 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:10 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:18:10 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:18:16 GTA не запущен. Выполняем копирование...
+2025/03/10 22:18:16 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:18:16 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:18:16 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:18:16 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:16 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:16 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:21 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:18:21 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:18:21 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:21 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:21 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:24 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:18:24 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:18:29 GTA не запущен. Выполняем копирование...
+2025/03/10 22:18:29 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:18:29 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:18:29 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:18:29 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:29 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:29 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:34 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:18:34 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:18:34 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:34 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:34 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:36 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:18:36 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:18:41 GTA не запущен. Выполняем копирование...
+2025/03/10 22:18:41 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:18:41 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:18:41 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:18:41 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:41 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:41 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:46 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:18:46 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:18:46 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:46 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:46 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:48 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:18:48 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:18:53 GTA не запущен. Выполняем копирование...
+2025/03/10 22:18:53 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:18:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:18:53 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:18:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:53 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:18:59 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:18:59 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:18:59 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:18:59 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:18:59 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:19:01 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:19:01 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:19:06 GTA не запущен. Выполняем копирование...
+2025/03/10 22:19:06 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:19:06 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:19:06 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:19:06 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:19:06 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:19:06 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:19:11 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:19:11 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:19:11 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:19:11 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:19:11 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:19:13 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:19:13 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:19:18 GTA не запущен. Выполняем копирование...
+2025/03/10 22:19:18 Копирование gunpack: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng
+2025/03/10 22:19:18 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\GUNPACK\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday8ng\dlc.rpf
+2025/03/10 22:19:18 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> D:\Grand Theft Auto V
+2025/03/10 22:19:18 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> D:\Grand Theft Auto V\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:19:18 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:19:18 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> D:\Grand Theft Auto V\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:19:22 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> D:\Grand Theft Auto V\update\update.rpf
+2025/03/10 22:19:22 Копирование redux: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX -> C:\Users\fesev\AppData\Local\altv-majestic\backup
+2025/03/10 22:19:22 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\x64\audio\sfx\PROLOGUE.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\x64\audio\sfx\PROLOGUE.rpf
+2025/03/10 22:19:22 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\patchday5ng\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\patchday5ng\dlc.rpf
+2025/03/10 22:19:22 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\x64\dlcpacks\mpvalentines2\dlc.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\x64\dlcpacks\mpvalentines2\dlc.rpf
+2025/03/10 22:19:24 Файл скопирован: C:\Users\fesev\Desktop\auto-redux-gunpack\REDUX\update\update.rpf -> C:\Users\fesev\AppData\Local\altv-majestic\backup\update\update.rpf
+2025/03/10 22:19:24 Копирование завершено. Ждем 5 секунд...
+2025/03/10 22:19:29 Процесс GTA5.exe обнаружен. Останавливаем копирование.
+2025/03/10 22:19:29 Работа копировального цикла завершена.
